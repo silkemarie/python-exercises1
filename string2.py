@@ -50,6 +50,7 @@ def front_back(a, b):
     hlena, hlenb = (len(a) + 1)//2, (len(b) + 1)//2
     return a[:hlena] + b[:hlenb] + a[hlena:] + b[hlenb:]
 
+    #forsøg der fejlede, fordi der ikke blev splittet rigtigt op:
     #firsthalfA, secondhalfA = a[:len(a)//2], a[len(a)//2:]
     #firsthalfB, secondhalfB = b[:len(b)//2], b[len(b)//2:]
     #return firsthalfA + firsthalfB + secondhalfA + secondhalfB
