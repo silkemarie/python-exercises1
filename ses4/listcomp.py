@@ -52,4 +52,32 @@ print([chr(i) for i in range(65, 90) if i not in [70, 75, 80, 85]])
 
 print([chr(i) for i in range(65, 90) if i not in range(70, 80, 2)])
 
+#or
+
+print([chr(i) for i in range(65, 91) if i not in range(ord('F'), ord('O'), 2)])
+
 #-------------------------------------------------------------------
+
+print([i for i in range(10) if i%2])
+print([i if i%2 else 'no no no' for i in range(10)])
+
+#-------------------------------------------------------------------
+# Cardgame: 
+
+color = ['♠', '♣', '♦', '♥']
+face = range(1, 14)
+for i in color:
+    for j in face:
+        print((i, j))
+
+#or
+
+print([(i,j) for i in color for j in face])
+
+
+print([(i,j) if j != 1 else (i,'A') for i in color for j in face])
+
+print([(i,j) if j != 1 else (i,'A') for i in color for j in face])
+#if j != 13 else (i,'K') if j != 12 else (i,'Q') if j != 11 else (i,'J') ????
+#-------------------------------------------------------------------
+
