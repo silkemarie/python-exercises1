@@ -43,7 +43,7 @@ class Compute:
         return li
 
 compute = Compute()
-print(compute())
+
 
 #def compute() og class Compute: gør her det samme. Det er bare forskellige måder at skrive det på.
 #===============================================
@@ -76,12 +76,17 @@ class Compute:
         return self
 
     def __next__(self):
-        pass
-
+        if self.last > 9:
+            raise StopIteration
+        self.last += 1
+        return self.last
 
 
 compute = Compute()
-print(compute)
+#it = compute()
+
+it = iter(compute)
+print(next(it))
 
 #==================================================
 
