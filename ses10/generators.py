@@ -93,3 +93,29 @@ print(next(it))
 #Iterator class
 
 #next: når jeg har et iteratable object, så kalder next den næste
+
+#==================================================
+
+#Generator function
+print('Vi er i generator function')
+
+def compute():
+    yield 1
+
+print(type(compute()))
+
+def compute():
+    for i in range(10):
+        yield i
+
+# print(compute())
+# ^ bliver til <generator object compute at 0x000000246539E5E00>
+
+it = compute()
+for i in compute:
+    print(i)
+
+#Generator expression
+
+[i for i in range(10)] #list
+(i for i in range(10)) #generator object, generator expression
