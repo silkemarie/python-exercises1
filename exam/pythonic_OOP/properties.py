@@ -39,3 +39,19 @@ print(p.name)  # prints "Bob"
 print(p.age)  # prints 35
 
 
+
+# Private attributes
+
+class Point:
+    def __init__(self, x, y):
+        self._x = x
+        self._y = y
+
+point = Point(1, 2)
+print(point._x)  # prints 1
+print(point._y)  # prints 2
+
+"""In this example, the _x and _y attributes are marked as private by prefixing their names with an underscore. 
+However, there is nothing stopping us from accessing or modifying these attributes from outside the Point object. 
+We can simply use the dot notation to access them, as shown in the example above."""
+

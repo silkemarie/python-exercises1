@@ -1,3 +1,5 @@
+# Decorators return a modified version of the original function
+
 def log_function(func):
     """Decorator function that logs the arguments and return value of a decorated function."""
     def wrapper(*args, **kwargs):
