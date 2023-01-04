@@ -1,7 +1,7 @@
 # Decorators return a modified version of the original function
-
+"""
 def log_function(func):
-    """Decorator function that logs the arguments and return value of a decorated function."""
+    #Decorator function that logs the arguments and return value of a decorated function.
     def wrapper(*args, **kwargs):
         # Log the arguments
         print(f'Args: {args}, Kwargs: {kwargs}')
@@ -31,7 +31,7 @@ result = decorated_add(3, 4)
 # Args: (3, 4), Kwargs: {}
 # Result: 7
 
-
+"""
 # ======= second example
 
 def uppercase(func):
