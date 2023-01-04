@@ -9,21 +9,17 @@ class Dog:
         print("Woof!")
 
 
-# Create an object of this class:
-my_dog = Dog("Buddy", "Labrador")
+my_dog = Dog("Suki", "Schapendoes")
 
+print(my_dog.name)
 
-# Can access the attributes using dot notation
-print(my_dog.name)  # prints "Buddy"
-
-# Can call methods using ()
-my_dog.bark()  # prints "Woof!"
+my_dog.bark()
 
 
 
 
 # Instance variable. Name and breed are instance variables here:
-
+"""
 class Dog:
     def __init__(self, name, breed):
         self.name = name
@@ -51,3 +47,4 @@ def say_hello(name):
     print(greeting + ", " + name)
 
 say_hello("Alice")  # Prints "Hello, Alice"
+"""
