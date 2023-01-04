@@ -1,33 +1,22 @@
 numbers = [1, 2, 3, 4]
 
-# Create an iterator from the numbers list
 iterator = iter(numbers)
 
-# Use the next() function to get the next element of the iterator
-print(next(iterator))  # Output: 1
-print(next(iterator))  # Output: 2
-print(next(iterator))  # Output: 3
-print(next(iterator))  # Output: 4
+print(next(iterator))
+print(next(iterator)) 
+print(next(iterator))
+print(next(iterator))
 
-
-#==================
-# Iterate over an iterator: 
-
+# Iterate over the iterator using a for loop
+print('Iterating over the iterator using a for loop:')
 
 numbers = [1, 2, 3, 4]
 
-# Create an iterator from the numbers list
 iterator = iter(numbers)
 
-# Iterate over the iterator using a for loop
 for number in iterator:
     print(number)
 
-# Output:
-# 1
-# 2
-# 3
-# 4
 
 #==================
 class MyIterable:
@@ -52,13 +41,12 @@ iterable = MyIterable([1, 2, 3, 4, 5])
 for item in iterable:
     print(item)
 
-#===================
+
+
 # Iteration in sets
 
-# Create a set
 s = {1, 2, 3, 4, 5}
 
-# Iterate over the set using a for loop
 for item in s:
     print(item)
 
@@ -66,10 +54,8 @@ for item in s:
 
 # Iteration in dictionaries 
 
-# Create a dictionary
 d = {'a': 1, 'b': 2, 'c': 3}
 
-# Iterate over the dictionary using a for loop
 for key in d:
     print(key)
 
@@ -82,10 +68,8 @@ for key, value in d.items():
 
 # Iteration in lists
 
-# Create a list
 l = [1, 2, 3, 4, 5]
 
-# Iterate over the list using a for loop
 for item in l:
     print(item)
 
@@ -93,10 +77,8 @@ for item in l:
 
 # Iteration in tuples
 
-# Create a tuple
 t = (1, 2, 3, 4, 5)
 
-# Iterate over the tuple using a for loop
 for item in t:
     print(item)
 
@@ -104,9 +86,13 @@ for item in t:
 
 # Iteration in strings
 
-# Create a string
-s = 'abcdef'
+s = 'Hej'
 
-# Iterate over the string using a for loop
 for char in s:
+    print(char)
+
+print('Proving not all string is iterable:')
+proof = 'hello\tworld\n'
+
+for char in proof:
     print(char)

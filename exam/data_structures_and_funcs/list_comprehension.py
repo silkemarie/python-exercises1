@@ -14,21 +14,16 @@ print(points)
 
 # For loop for comparison:
 
-# Create an empty list
+# Using for loop:
 squares = []
 
-# Use a for loop to compute the squares of the integers from 1 to 10
 for i in range(1, 11):
     squares.append(i ** 2)
 
-# Print the resulting list
-print(squares)  # Output: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+print(squares)
 
 
-# List comprehension:
-
-# Use list comprehension to create a list of the squares of the integers from 1 to 10
+# Using list comprehension:
 squares = [i ** 2 for i in range(1, 11)]
 
-# Print the resulting list
-print(squares)  # Output: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+print(squares)

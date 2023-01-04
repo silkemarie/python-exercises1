@@ -1,5 +1,5 @@
 # Iter function
-
+"""
 # Create a list of integers
 numbers = [1, 2, 3, 4, 5]
 
@@ -16,7 +16,7 @@ print(next(iterator))  # Output: 2
 for value in iterator:
     print(value)  # Output: 3, 4, 5
 
-
+"""
 #================
 
 #Generators
@@ -29,13 +29,13 @@ def countdown(n):
 
 countdown_generator = countdown(5)
 
-print(next(countdown_generator))  # Output: 5
-print(next(countdown_generator))  # Output: 4
-print(next(countdown_generator))  # Output: 3
-print(next(countdown_generator))  # Output: 2
-print(next(countdown_generator))  # Output: 1
+print(next(countdown_generator))
+print(next(countdown_generator))
+print(next(countdown_generator))
+print(next(countdown_generator))
+print(next(countdown_generator)) 
 
-
+"""
 #==============
 
 # Generator expressions:
@@ -55,3 +55,4 @@ print(next(squares_generator))  # Output: 4
 print(next(squares_generator))  # Output: 9
 print(next(squares_generator))  # Output: 16
 print(next(squares_generator))  # Output: 25
+"""

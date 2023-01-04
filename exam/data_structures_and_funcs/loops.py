@@ -5,7 +5,7 @@ for i in range(1, 11):
     print(i)
 
 # Iterate over a list of names
-names = ['Alice', 'Bob', 'Charlie', 'Dave']
+names = ['Claus', 'Jens', 'Silke', 'Kristian']
 for name in names:
     print(name)
 

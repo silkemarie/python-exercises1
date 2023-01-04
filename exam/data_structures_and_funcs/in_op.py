@@ -1,13 +1,10 @@
-s = 'foo'
+s = 'Python'
 
-s in 'Food for thought.'
-# Output: True
+print(s in 'Python er nice.')
 
-s in 'No thank you.'
-# Output: False
+print(s in 'Java er også godt.')
 
-'z' not in 'abc'
-# Output: True
+print('ananas' not in 'pizza')
 
-'z' not in 'xyz'
-# Output: False
+print('a' not in 'abc')
+

@@ -1,22 +1,27 @@
-person = {'name': 'John', 'age': 30, 'country': 'USA'}
+person = {'name': 'Silke', 'age': 30, 'country': 'Denmark'}
 
 print(person['name'])  
-# Output: 'John'
 
 print(person['age'])  
-# Output: 30
 
 
 print(person.get('name'))  
-# Output: 'John'
 
 print(person.get('age'))  
-# Output: 30
 
 person['age'] = 31
 print(person)  
-# Output: {'name': 'John', 'age': 31, 'country': 'USA'}
 
-person['city'] = 'New York'
+person['city'] = 'Copenhagen'
 print(person)  
-# Output: {'name': 'John', 'age': 31, 'country': 'USA', 'city': 'New York'}
+
+
+for key, value in person.items():
+    print(f'{key}: {value}')
+
+for key, value in person.items():
+    print(value)
+
+for key in person:
+    print(key)
+
