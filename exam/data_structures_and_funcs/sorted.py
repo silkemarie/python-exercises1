@@ -1,5 +1,15 @@
 words = ['apple', 'banana', 'cherry', 'date']
 
+# Sort the list automatically (alphebetically)
+sorted_words = sorted(words)
+print(sorted_words) # Output: ['apple', 'banana', 'cherry', 'date']
+
+
+# Sort the list numerically: 
+numbers = [3, 1, 4, 2]
+sorted(numbers) # Output: [1, 2, 3, 4]
+
+
 # Sort the list of words by their length
 sorted_words = sorted(words, key=len)
 print(sorted_words)  # Output: ['date', 'apple', 'banana', 'cherry']
