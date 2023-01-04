@@ -6,7 +6,7 @@ def greet(name):
     yield
     print("Goodbye, " + name)
 
-with greet("Alice"):
-    print("Doing some work")
+with greet("Claus"):
+    print("Doing some python")
 
 
